@@ -2,22 +2,24 @@
 let currentLang = 'en';
 
 function initSite() {
-    // *** UPDATED: Apply the Motion Background Image ***
+    // Load Logo
+    document.getElementById('siteLogo').src = siteData.logoUrl;
+
+    // Apply the Motion Background Image 
     const hero = document.getElementById('home');
     hero.style.backgroundImage = `url(${siteData.heroBgImage})`;
 
-    // ... existing init functions ...
     renderServices();
     renderGallery();
     renderReviews();
     applyTranslations();
     
-    // Set Iframes (Glad your map is working now!)
+    // Set Iframes 
     document.getElementById('googleFormIframe').src = siteData.googleFormLink;
     document.getElementById('googleMapIframe').src = siteData.googleMapLink;
 }
 
-// 1. Render 3D Services
+// 1. Render 3D Services (UPDATED WITH PRICES & DOOR DESIGN)
 function renderServices() {
     const grid = document.getElementById('servicesGrid');
     grid.innerHTML = '';
@@ -27,8 +29,11 @@ function renderServices() {
         card.innerHTML = `
             <div class="room-inside">
                 <img src="${service.img}" alt="${service[currentLang]}">
+                <div class="price-tag">${service.price}</div>
             </div>
             <div class="door">
+                <div class="door-panel"></div>
+                <div class="door-panel"></div>
                 <h3>${service[currentLang]}</h3>
             </div>
         `;
@@ -64,18 +69,16 @@ function renderReviews() {
 function toggleLanguage() {
     currentLang = currentLang === 'en' ? 'hi' : 'en';
     applyTranslations();
-    renderServices(); // Re-render to update text on doors
-    renderReviews();  // Re-render to update review language
+    renderServices(); 
+    renderReviews();  
 }
 
 function applyTranslations() {
     const t = siteData.translations[currentLang];
-    // Nav
     document.getElementById('navHome').innerText = t.navHome;
     document.getElementById('navServices').innerText = t.navServices;
     document.getElementById('navGallery').innerText = t.navGallery;
     document.getElementById('navBook').innerText = t.navBook;
-    // Sections
     document.getElementById('heroTitle').innerText = t.heroTitle;
     document.getElementById('heroSub').innerText = t.heroSub;
     document.getElementById('secServices').innerText = t.secServices;
@@ -86,5 +89,4 @@ function applyTranslations() {
     document.getElementById('secLocation').innerText = t.secLocation;
 }
 
-// Run on load
 window.onload = initSite;
