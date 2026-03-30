@@ -1,0 +1,130 @@
+:root {
+    --gold: #D4AF37;
+    --dark-pink: #9A1750;
+    --black: #1A1A1D;
+    --white: #F3F3F3;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+body { background-color: var(--black); color: var(--white); overflow-x: hidden; }
+
+/* Navigation */
+nav { display: flex; justify-content: space-between; padding: 20px 50px; background: rgba(26, 26, 29, 0.9); position: fixed; width: 100%; z-index: 100; backdrop-filter: blur(10px); }
+.logo { font-size: 24px; font-weight: bold; color: var(--gold); }
+.nav-links a { color: var(--white); text-decoration: none; margin: 0 15px; transition: color 0.3s; }
+.nav-links a:hover { color: var(--gold); }
+#langToggle { background: var(--gold); border: none; padding: 8px 15px; cursor: pointer; border-radius: 5px; font-weight: bold; margin-left: 20px;}
+
+/* Typography */
+.section-title { text-align: center; color: var(--gold); font-size: 36px; margin-bottom: 10px; margin-top: 80px;}
+.section-sub { text-align: center; color: #ccc; margin-bottom: 40px; }
+
+/* Hero Section (Simulation Feel) */
+/* --- UPDATED: 3D Hero Section with Motion Background --- */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    perspective: 1000px;
+    
+    /* Fallback color */
+    background-color: var(--black); 
+    position: relative;
+    overflow: hidden; /* Keeps the zooming image inside the screen */
+}
+
+/* The Animated Image Layer */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    
+    /* Grabs the image set by JS */
+    background-image: inherit; 
+    background-size: cover;
+    background-position: center;
+    z-index: 1; /* Lowest layer */
+    
+    /* THE MOTION: Cinematic zoom/pan effect */
+    animation: kenBurnsEffect 20s infinite alternate linear; 
+}
+
+/* Dark Overlay to make text pop */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    /* Darkens the bottom 95% of the screen */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, var(--black) 95%);
+    z-index: 2; /* Middle layer */
+}
+
+/* Modify hero content z-index to stay on top of the image */
+.hero-content {
+    z-index: 10; /* Highest layer */
+}
+
+.hero h1 {
+    font-size: 60px;
+    color: var(--gold);
+    /* Improved text shadow for legibility against image */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 0 20px rgba(212, 175, 55, 0.3); 
+}
+
+/* NEW: Ken Burns Motion Keyframes */
+@keyframes kenBurnsEffect {
+    0% { transform: scale(1) translate(0, 0); }
+    100% { transform: scale(1.1) translate(-2%, -2%); }
+}
+
+/* Floating Animation (already in your file, kept here for context) */
+.floating { animation: float 4s ease-in-out infinite; }
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+/* Floating Animation */
+.floating { animation: float 4s ease-in-out infinite; }
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* 3D Door Services Grid */
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; padding: 0 50px; perspective: 1200px; }
+.service-3d-card { width: 100%; height: 350px; position: relative; transform-style: preserve-3d; }
+.door, .room-inside { position: absolute; width: 100%; height: 100%; border-radius: 10px; backface-visibility: hidden; transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+
+/* The Door (Front) */
+.door { background: linear-gradient(135deg, var(--dark-pink), #5D001E); border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; z-index: 2; transform-origin: left; cursor: pointer; }
+.door h3 { color: var(--gold); font-size: 24px; text-align: center; padding: 20px;}
+.door::after { content: '•'; position: absolute; right: 15px; color: var(--gold); font-size: 30px; } /* Door knob */
+
+/* The Inside (Back) */
+.room-inside { background: #222; border: 2px solid var(--gold); overflow: hidden; }
+.room-inside img { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: transform 2s; }
+
+/* Interaction: Open the Door */
+.service-3d-card:hover .door { transform: rotateY(-105deg); }
+.service-3d-card:hover .room-inside img { transform: scale(1.1); }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; padding: 0 50px; }
+.gallery-grid img { width: 100%; height: 300px; object-fit: cover; border-radius: 10px; transition: transform 0.5s, filter 0.5s; filter: grayscale(50%); }
+.gallery-grid img:hover { transform: scale(1.05); filter: grayscale(0%); z-index: 10; position: relative; }
+
+/* Reviews */
+.reviews-container { display: flex; overflow-x: auto; padding: 20px 50px; gap: 20px; scroll-snap-type: x mandatory; }
+.review-card { min-width: 300px; background: #222; padding: 30px; border-radius: 10px; border-left: 5px solid var(--gold); scroll-snap-align: start; }
+.review-card h4 { color: var(--gold); margin-bottom: 10px; }
+
+/* Booking & Location */
+.split-section { display: flex; flex-wrap: wrap; padding: 50px; gap: 30px; }
+.booking-form, .location-map { flex: 1; min-width: 300px; background: #222; padding: 20px; border-radius: 10px; border: 1px solid var(--gold); }

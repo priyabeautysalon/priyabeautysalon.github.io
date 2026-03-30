@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priya Beauty Parlour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Priya Beauty Salon</div>
+        <div class="nav-links">
+            <a href="#home" id="navHome">Home</a>
+            <a href="#services" id="navServices">Services</a>
+            <a href="#gallery" id="navGallery">Gallery</a>
+            <a href="#booking" id="navBook">Book Now</a>
+            <button id="langToggle" onclick="toggleLanguage()">English / हिंदी</button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content floating">
+            <h1 id="heroTitle">Step Into Elegance</h1>
+            <p id="heroSub">Welcome to Priya Beauty Parlour. Experience luxury.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 id="secServices" class="section-title">Our Services</h2>
+        <p id="secServicesSub" class="section-sub">Click the doors to reveal your transformation.</p>
+        <div class="services-grid" id="servicesGrid">
+            </div>
+    </section>
+
+    <section id="gallery">
+        <h2 id="secGallery" class="section-title">Our Past Work</h2>
+        <div class="gallery-grid" id="galleryGrid">
+            </div>
+    </section>
+
+    <section id="reviews">
+        <h2 id="secReviews" class="section-title">Client Reviews</h2>
+        <div class="reviews-container" id="reviewsContainer">
+            </div>
+    </section>
+
+    <section id="booking" class="split-section">
+        <div class="booking-form">
+            <h2 id="secBook" class="section-title">Book an Appointment</h2>
+            <iframe id="googleFormIframe" src="" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <div class="location-map">
+            <h2 id="secLocation" class="section-title">Find Us</h2>
+            <iframe id="googleMapIframe" src="" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
