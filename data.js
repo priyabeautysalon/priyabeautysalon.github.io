@@ -3,7 +3,7 @@
 const siteData = {
     // *** NEW: The Big Animated Cover Photo ***
     // Replace this link with the owner's actual parlour photo link later
-    heroBgImage: "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1920&auto=format&fit=crop",
+    heroBgImage: "https://photos.app.goo.gl/ggzJYk6EtrzRFQmg9",
     // 1. SERVICES (Add or remove services here)
     services: [
         { id: "bridal", img: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=500&q=80", en: "Bridal Makeup", hi: "ब्राइडल मेकअप" },
