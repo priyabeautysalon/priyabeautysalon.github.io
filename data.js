@@ -3,28 +3,39 @@
 const siteData = {
     // *** NEW: Temporary Logo ***
     // Replace with your real logo URL later (transparent PNG works best)
-    logoUrl: "https://via.placeholder.com/200x60/ffe4e1/c2185b?text=Priya+Logo", 
+    logoUrl: "images/logo.png", 
     
     // The Big Animated Cover Photo
-    heroBgImage: "https://photos.fife.usercontent.google.com/pw/AP1GczPiJGTbuBkBYp2rQo_ZMTwM3J0EYvescWOb3k-pRQu1azvpXMvmFm0=w1335-h890-s-no-gm?authuser=0",
+    heroBgImage: "images/banner.jpg",
 
     // 1. SERVICES (Added Prices)
     services: [
-        { id: "bridal", img: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=500&q=80", en: "Bridal Makeup", hi: "ब्राइडल मेकअप", price: "₹5000+" },
-        { id: "party", img: "https://images.unsplash.com/photo-1516975080661-46b081b94b0d?auto=format&fit=crop&w=500&q=80", en: "Party Makeup", hi: "पार्टी मेकअप", price: "₹1500+" },
-        { id: "treatment", img: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=500&q=80", en: "Beauty Treatment", hi: "ब्यूटी ट्रीटमेंट", price: "₹999+" },
-        { id: "mehndi", img: "https://images.unsplash.com/photo-1563205770-5b6823c91db0?auto=format&fit=crop&w=500&q=80", en: "Mehndi", hi: "मेहंदी", price: "₹500+" },
-        { id: "haldi", img: "https://images.unsplash.com/photo-1606804561841-31de23f2f816?auto=format&fit=crop&w=500&q=80", en: "Haldi Platter", hi: "हल्दी प्लैटर", price: "₹1200+" },
-        { id: "facial", img: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=500&q=80", en: "Facial & Bleach", hi: "फेशियल और ब्लीच", price: "₹800+" },
-        { id: "hair", img: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=500&q=80", en: "Hair Colour", hi: "हेयर कलर", price: "₹1000+" },
-        { id: "nails", img: "https://images.unsplash.com/photo-1519014816548-bf5fe059e98b?auto=format&fit=crop&w=500&q=80", en: "Nail Extension", hi: "नेल एक्सटेंशन", price: "₹700+" }
+        { id: "bridal", img: "images/bridal.jpg", en: "Bridal Makeup", hi: "ब्राइडल मेकअप", price: "₹5000+" },
+        { id: "party", img: "images/party.jpg", en: "Party Makeup", hi: "पार्टी मेकअप", price: "₹1500+" },
+        { id: "treatment", img: "images/beauty.jpg", en: "Beauty Treatment", hi: "ब्यूटी ट्रीटमेंट", price: "₹999+" },
+        { id: "mehndi", img: "images/mehndi.jpg", en: "Mehndi", hi: "मेहंदी", price: "₹500+" },
+        { id: "haldi", img: "images/haldi.jpg", en: "Haldi Platter", hi: "हल्दी प्लैटर", price: "₹1200+" },
+        { id: "facial", img: "images/facial.jpg", en: "Facial & Bleach", hi: "फेशियल और ब्लीच", price: "₹800+" },
+        { id: "hair", img: "images/hair.jpg", en: "Hair Colour", hi: "हेयर कलर", price: "₹1000+" },
+        { id: "nails", img: "images/nail.jpg", en: "Nail Extension", hi: "नेल एक्सटेंशन", price: "₹700+" }
     ],
 
     // 2. GALLERY IMAGES 
     gallery: [
-        "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80",
-        "https://images.unsplash.com/photo-1519415943484-9fa1873496d4?auto=format&fit=crop&w=500&q=80",
-        "https://images.unsplash.com/photo-1595476108010-b4d1f10d5e43?auto=format&fit=crop&w=500&q=80"
+        "images/pw1.jpg",
+        "images/pw2.jpg",
+        "images/pw3.jpg",
+        "images/pw4.jpg",
+        "images/pw5.jpg",
+        "images/pw6.jpg",
+        "images/pw7.jpg",
+        "images/pw8.jpg",
+        "images/pw9.jpg",
+        "images/pw10.jpg",
+        "images/pw11.jpg",
+        "images/pw12.jpg",
+        "images/pw13.jpg",
+        "images/pw14.jpg",
     ],
 
     // 3. REVIEWS
