@@ -17,6 +17,8 @@ function initSite() {
     // Set Iframes 
     document.getElementById('googleFormIframe').src = siteData.googleFormLink;
     document.getElementById('googleMapIframe').src = siteData.googleMapLink;
+    document.getElementById('gmailLink').href = `mailto:${siteData.contact.email}`;
+    document.getElementById('instaLink').href = siteData.contact.instagram;
 }
 
 // 1. Render 3D Services (UPDATED WITH PRICES & DOOR DESIGN)
@@ -87,6 +89,7 @@ function applyTranslations() {
     document.getElementById('secReviews').innerText = t.secReviews;
     document.getElementById('secBook').innerText = t.secBook;
     document.getElementById('secLocation').innerText = t.secLocation;
+    document.getElementById('secContact').innerText = t.secContact;
 }
 
 window.onload = initSite;
