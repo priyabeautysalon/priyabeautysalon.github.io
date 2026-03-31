@@ -47,7 +47,11 @@ const siteData = {
     // 4. GOOGLE FORM & MAP LINKS
     googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSfK_IbJDzdezhqimZrGqBRB8Dce7acAb38s5_MV18lKmq-jWA/viewform?usp=sharing&ouid=117098027613890811227",
     googleMapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160.98494555303307!2d79.38273618398229!3d27.506939033543453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399e2bdd4ec81ff5%3A0xd2ea80b4435c7eb3!2sPriya%20Beauty%20Salon!5e1!3m2!1sen!2sin!4v1774841773128!5m2!1sen!2sin",
-
+    // *** NEW: CONTACT INFO ***
+    contact: {
+        email: "priyashakya8528@gmail.com", // Change to the real email
+        instagram: "https://instagram.com/beautysalon_priya" // Change to real Insta link
+    },
     // 5. WEBSITE TRANSLATIONS
     translations: {
         en: {
