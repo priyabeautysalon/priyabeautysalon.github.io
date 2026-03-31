@@ -56,16 +56,16 @@ const siteData = {
     translations: {
         en: {
             navHome: "Home", navServices: "Services", navGallery: "Gallery", navBook: "Book Now",
-            heroTitle: "Step Into Elegance", heroSub: "Welcome to Priya Beauty Parlour. Experience luxury.",
-            secServices: "Our Services", secServicesSub: "Click the doors to reveal your transformation.",
+            heroTitle: "Priya Beauty Salon", heroSub: "Turk Lalaiya, Kaimganj.",
+            secServices: "Our Services", secServicesSub: "Click to know Price.",
             secGallery: "Our Past Work", secReviews: "Client Reviews", secBook: "Book an Appointment",
             secLocation: "Find Us",
             secContact: "Connect With Us" // <-- NEW
         },
         hi: {
             navHome: "होम", navServices: "सेवाएं", navGallery: "गैलरी", navBook: "बुक करें",
-            heroTitle: "खूबसूरती की दुनिया में कदम रखें", heroSub: "प्रिया ब्यूटी पार्लर में आपका स्वागत है।",
-            secServices: "हमारी सेवाएं", secServicesSub: "बदलाव देखने के लिए दरवाजों पर क्लिक करें।",
+            heroTitle: "प्रिया ब्यूटी सैलोन", heroSub: "तुर्क ललैया, कायमगंज",
+            secServices: "हमारी सेवाएं", secServicesSub: "पैसे देखने के क्लिक करें।",
             secGallery: "हमारा काम", secReviews: "ग्राहक समीक्षा", secBook: "अपॉइंटमेंट बुक करें",
             secLocation: "हमारा पता",
             secContact: "हमसे संपर्क करें" // <-- NEW
