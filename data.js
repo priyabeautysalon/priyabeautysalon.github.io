@@ -14,10 +14,10 @@ const siteData = {
         { id: "party", img: "images/party.webp", en: "Party Makeup", hi: "पार्टी मेकअप", price: "₹1500+" },
         { id: "treatment", img: "images/beauty.webp", en: "Beauty Treatment", hi: "ब्यूटी ट्रीटमेंट", price: "₹999+" },
         { id: "mehndi", img: "images/mehndi.webp", en: "Mehndi", hi: "मेहंदी", price: "₹500+" },
-        { id: "haldi", img: "images/haldi.webp", en: "Haldi Platter", hi: "हल्दी प्लैटर", price: "₹1200+" },
-        { id: "facial", img: "images/facial.webp", en: "Facial & Bleach", hi: "फेशियल और ब्लीच", price: "₹800+" },
-        { id: "hair", img: "images/hair.webp", en: "Hair Colour", hi: "हेयर कलर", price: "₹1000+" },
-        { id: "nails", img: "images/nail.webp", en: "Nail Extension", hi: "नेल एक्सटेंशन", price: "₹700+" }
+        { id: "haldi", img: "images/haldi.webp", en: "Haldi Platter", hi: "हल्दी प्लैटर", price: "₹300+" },
+        { id: "facial", img: "images/facial.webp", en: "Facial & Bleach", hi: "फेशियल और ब्लीच", price: "₹600+ & 200+" },
+        { id: "hair", img: "images/hair.webp", en: "Hair Colour", hi: "हेयर कलर", price: "₹300+" },
+        { id: "nails", img: "images/nail.webp", en: "Nail Extension", hi: "नेल एक्सटेंशन", price: "₹500+" }
     ],
 
     // 2. GALLERY IMAGES 
