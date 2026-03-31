@@ -56,17 +56,19 @@ const siteData = {
     translations: {
         en: {
             navHome: "Home", navServices: "Services", navGallery: "Gallery", navBook: "Book Now",
-            heroTitle: "Priya Beauty Salon", heroSub: "Step into elegence. Experience luxury.",
+            heroTitle: "Step Into Elegance", heroSub: "Welcome to Priya Beauty Parlour. Experience luxury.",
             secServices: "Our Services", secServicesSub: "Click the doors to reveal your transformation.",
             secGallery: "Our Past Work", secReviews: "Client Reviews", secBook: "Book an Appointment",
-            secLocation: "Find Us"
+            secLocation: "Find Us",
+            secContact: "Connect With Us" // <-- NEW
         },
         hi: {
             navHome: "होम", navServices: "सेवाएं", navGallery: "गैलरी", navBook: "बुक करें",
             heroTitle: "खूबसूरती की दुनिया में कदम रखें", heroSub: "प्रिया ब्यूटी पार्लर में आपका स्वागत है।",
             secServices: "हमारी सेवाएं", secServicesSub: "बदलाव देखने के लिए दरवाजों पर क्लिक करें।",
             secGallery: "हमारा काम", secReviews: "ग्राहक समीक्षा", secBook: "अपॉइंटमेंट बुक करें",
-            secLocation: "हमारा पता"
+            secLocation: "हमारा पता",
+            secContact: "हमसे संपर्क करें" // <-- NEW
         }
     }
 };
